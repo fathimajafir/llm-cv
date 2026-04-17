@@ -7,9 +7,12 @@ from agents.scorer import score_candidate
 app = FastAPI(title="LLM CV Screener API")
 
 def parse_jd_skills(jd_text: str) -> list[str]:
-    # Simple keyword extraction — swap for NER model for production
-    keywords = ["python", "fastapi", "llm", "pytorch", "mlops", "rag",
-                "huggingface", "docker", "kubernetes", "sql", "aws", "azure"]
+    keywords = [
+        "python", "fastapi", "llm", "pytorch", "mlops", "rag",
+        "huggingface", "docker", "kubernetes", "sql", "aws", "azure",
+        "machine learning", "deep learning", "nlp", "transformers",
+        "langchain", "vector database", "ci/cd", "flask", "api"
+    ]
     return [k for k in keywords if k in jd_text.lower()]
 
 @app.post("/screen")
