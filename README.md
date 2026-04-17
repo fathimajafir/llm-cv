@@ -7,8 +7,6 @@ An agentic AI pipeline that screens CVs against job descriptions — producing r
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-green?style=flat-square)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
-
 ---
 
 ## Why I Built This
